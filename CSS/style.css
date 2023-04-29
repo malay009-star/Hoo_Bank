@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Noto+Nastaliq+Urdu&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Signika+Negative:wght@300;400;500;600;700&display=swap");
+*,
+::after,
+::before {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #080b17;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  width: 90%;
+  margin: auto;
+  height: 6.5rem;
+}
+header #logo img {
+  flex-grow: 3;
+  cursor: pointer;
+  width: 124px;
+}
+header li {
+  margin-left: 2.3rem;
+}
+header li:first-child a {
+  border-bottom: 2px solid #FFFEFF;
+}
+header a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #FFFEFF;
+  transition: all 0.5s ease;
+}
+header a:hover {
+  font-size: 1.05rem;
+  color: #5CE1E6;
+}
+header #btn {
+  border-radius: 10px;
+  color: #0A0D18;
+  font-weight: 500;
+  padding: 17px 25px;
+  margin-left: 2rem;
+  transition: all 0.3s ease;
+  background: linear-gradient(157.81deg, #def9fa -43.27%, #bef3f5 -21.24%, #9dedf0 12.19%, #7de7eb 29.82%, #5ce1e6 51.94%, #33bbcf 90.29%);
+}
+header #btn:hover {
+  color: #3d4772;
+}
+header #nav-burger {
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: none;
+}
+
+@media (max-width: 750px) {
+  header {
+    width: 93%;
+    margin: auto;
+  }
+  header ul {
+    z-index: 1;
+    background-color: #33BBCF;
+    position: fixed;
+    top: 15%;
+    width: 100%;
+    height: 400px;
+    left: -100%;
+    display: flex;
+    border-radius: 0.23rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    transition: all 0.5s ease;
+  }
+  header li {
+    margin-left: 0rem;
+  }
+  header .is-open {
+    left: 0%;
+  }
+  header a {
+    color: #080b17;
+    font-weight: 500;
+  }
+  header a:hover {
+    color: black;
+    font-size: 1.15rem;
+  }
+  header li:first-child a {
+    border-bottom: 2px solid #080b17;
+  }
+  header #btn {
+    padding: 14px 21px;
+  }
+  header #btn:hover {
+    color: #080b17;
+    padding: 16px 24px;
+  }
+  header #nav-burger {
+    display: block;
+    margin-left: 2rem;
+  }
+}
+@media (max-width: 368px) {
+  header a {
+    font-size: 14 px;
+  }
+  header #logo img {
+    width: 115px;
+  }
+  header #btn {
+    font-weight: 400;
+    padding: 11px 11px;
+  }
+  header #btn:hover {
+    padding: 11px 12px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

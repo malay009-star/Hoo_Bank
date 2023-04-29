@@ -1,0 +1,117 @@
+header {
+    width: 90%;
+    margin: auto;
+    height: 6.5rem;
+    #logo img {
+        flex-grow: 3;
+        cursor: pointer;
+        width: 124px;
+    }
+    li {
+        margin-left: 2.3rem;
+    }
+    li:first-child a {
+        border-bottom: 2px solid $secondary-color;
+    }
+    a {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        color: $secondary-color;
+        transition: all 0.5s ease;
+    }
+    a:hover {
+        font-size: 1.05rem;
+        color: $primary-color;
+    }
+    #btn {
+        border-radius: 10px;
+        color: #0A0D18;
+        font-weight: 500;
+        padding: 17px 25px;
+        margin-left: 2rem;
+        transition: all 0.3s ease;
+        background: linear-gradient(157.81deg, #def9fa -43.27%, #bef3f5 -21.24%, #9dedf0 12.19%, #7de7eb 29.82%, #5ce1e6 51.94%, #33bbcf 90.29%);
+    }
+    #btn:hover {
+        color: #3d4772;
+        // padding: 18px 26px;
+    }
+    #nav-burger {
+        cursor: pointer;
+        font-size: 1.2rem;
+        display: none;
+    }
+}
+
+@include sm-tablet {
+    header {
+        width: 93%;
+        margin: auto;
+        ul {
+            z-index: 1;
+            background-color: #33BBCF;
+            position: fixed;
+            top: 15%;
+            width: 100%;
+            height: 400px;
+            left: -100%;
+            display: flex;
+            border-radius: 0.23rem;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-evenly;
+            transition: all 0.5s ease;
+        }
+        li {
+            margin-left: 0rem;
+        }
+        .is-open {
+            left: 0%;
+        }
+        a {
+            color: $bg-color;
+            font-weight: 500;
+        }
+        a:hover {
+            color: black;
+            font-size: 1.15rem;
+        }
+        li:first-child a {
+            border-bottom: 2px solid $bg-color;
+        }
+        #btn {
+            padding: 14px 21px;
+        }
+        #btn:hover {
+            color: $bg-color;
+            padding: 16px 24px;
+        }
+        #nav-burger {
+            display: block;
+            margin-left: 2rem;
+        }
+    }
+}
+
+@include sm-mobile {
+    header {
+        // background-color: red;
+        a {
+            font-size: 14 px;
+        }
+        #logo img {
+            width: 115px;
+        }
+        #btn {
+            font-weight: 400;
+            padding: 11px 11px;
+        }
+        #btn:hover {
+            padding: 11px 12px;
+        }
+    }
+}
