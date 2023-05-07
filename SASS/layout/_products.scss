@@ -1,0 +1,95 @@
+    .same_heading {
+        #easy_control {
+            margin-top: 5rem;
+        }
+        p {
+            width: 470px;
+        }
+        #btn {
+            margin-top: 1.2rem;
+        }
+        #play_store {
+            margin-left: 2rem;
+        }
+        #paypal_info {
+            // background-color: red;
+            margin-left: 2.5rem;
+        }
+    }
+    
+    #card {
+        margin-top: 5rem;
+    }
+    
+    // credit card info
+    .same_heading {
+        h1 {
+            // background-color: red;
+            margin-top: 0rem;
+        }
+        #card_para {
+            width: 470px;
+            height: 90px;
+        }
+    }
+    
+    @include sm-laptop {
+        #card {
+            margin-top: 0rem;
+        }
+        .same_heading {
+            #paypal_info {
+                // background-color: red;
+                margin-left: 0rem;
+            }
+        }
+    }
+    
+    @include mobile {
+        .same_heading {
+            // background-color: blue;
+            padding-bottom: 3rem;
+            #easy_control {
+                margin-top: 0rem;
+                font-size: 2.3rem;
+            }
+            p {
+                width: 415px;
+                height: 140px;
+                font-size: 16px;
+                margin-bottom: 0rem;
+            }
+            #card_para {
+                width: 415px;
+                height: 125px;
+            }
+            #btn {
+                margin-top: 1.3rem;
+            }
+        }
+        #card {
+            // background-color: red;
+            width: 440px;
+        }
+    }
+    
+    @include sm-mobile {
+        .same_heading {
+            #easy_control {
+                font-size: 1.5rem;
+            }
+            p {
+                width: 334px;
+                height: 150px;
+                font-size: 16px;
+                // background-color: red;
+            }
+            #card_para {
+                width: 333px;
+                height: 125px;
+            }
+        }
+        #card {
+            width: 320px;
+        }
+    }

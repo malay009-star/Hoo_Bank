@@ -1,0 +1,129 @@
+    // clients heading
+    #clients_info {
+        // background-color: red;
+        margin-top: 5rem;
+        h1 {
+            width: 95%;
+            // background-color: blue;
+        }
+        p {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    
+    #leader_info {
+        margin-top: 5rem;
+        // background-color: red;
+        align-items: center;
+        width: 370px;
+        height: 395px;
+        padding: 0rem 2.3rem;
+        padding-top: 3.4rem;
+        border-radius: 20px;
+        .para {
+            // background-color: red;
+            color: white;
+            padding: 2rem 0rem;
+        }
+        #women_img {
+            width: 50px;
+            height: 50px;
+        }
+        #women_info {
+            // background-color: red;
+            margin-left: 1rem;
+            h2 {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 32px;
+            }
+            p {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: $para-color;
+            }
+        }
+    }
+    
+    #leader_info:hover {
+        transition: transform .3s;
+        transform: scale(1.1);
+        background: linear-gradient(144.39deg, #FFFFFF -278.56%, #6D6D6D -78.47%, #11101D 91.61%);
+        backdrop-filter: blur(5px);
+    }
+    
+    @include sm-laptop {
+        // Clients heading
+        #clients_info {
+            // background-color: red;
+            h1 {
+                width: 100%;
+            }
+            p {
+                display: block;
+            }
+        }
+    }
+    
+    @include mobile {
+        #clients_info {
+            margin-top: 12rem;
+            // background-color: red;
+        }
+        #leader_info {
+            margin-top: 1rem;
+            margin-left: 2rem;
+            // background-color: red;
+            width: 345px;
+            height: 370px;
+            padding: 0rem 1.5rem;
+            padding-top: 3rem;
+            .para {
+                padding: 1rem 0rem;
+            }
+            #women_info {
+                // background-color: red;
+                margin-left: 1rem;
+                h2 {
+                    font-size: 20px;
+                }
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    
+    @include sm-mobile {
+        #clients_info {
+            margin-top: 8rem;
+            // background-color: red;   
+        }
+        #leader_info {
+            margin-left: 1rem;
+            // background-color: red;
+            width: 290px;
+            height: 360px;
+            padding: 0rem 0.8rem;
+            padding-top: 2rem;
+            .para {
+                padding: 1rem 0rem;
+            }
+            #women_info {
+                // background-color: red;
+                margin-left: 1rem;
+                h2 {
+                    font-size: 20px;
+                }
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+    }

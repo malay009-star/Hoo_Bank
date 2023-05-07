@@ -1,0 +1,32 @@
+#equal_width {
+    width: 90%;
+    margin: auto;
+}
+
+.equal_spacing {
+    padding: 10rem 0rem;
+}
+
+.para {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30.8px;
+    margin: 1.25rem 0rem;
+    letter-spacing: 0.01em;
+    scroll-behavior: smooth;
+    color: $para-color;
+}
+
+@include tablet {
+    // #equal_width {
+    //     width: 90%;
+    //     margin: auto;
+    // }
+}
+
+@include sm-laptop {
+    .equal_spacing {
+        padding: 8rem 0rem;
+    }
+}

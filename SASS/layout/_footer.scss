@@ -1,0 +1,157 @@
+#footer {
+    height: 280px;
+    #logo_info {
+        // background-color: red;
+        p {
+            padding-top: 1rem;
+            width: 317px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 32px;
+            color: $para-color;
+            // background-color: blue;
+        }
+    }
+}
+
+#footer_pages {
+    h1 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: $para-color;
+        transition: all 0.4s ease;
+    }
+    p:hover {
+        padding-left: 1rem;
+        cursor: pointer;
+        color: $primary-color;
+    }
+}
+
+#last_pages {
+    h1 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: $para-color;
+        transition: all 0.4s ease;
+    }
+    p:hover {
+        padding-left: 1rem;
+        cursor: pointer;
+        color: $primary-color;
+    }
+}
+
+// copywrite section
+#copywrite_sec {
+    padding-top: 1.5rem;
+    padding-bottom: 4rem;
+    border-top: 1px solid #3F3E45;
+    p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+    }
+}
+
+#social_icon {
+    img {
+        margin-left: 1rem;
+    }
+}
+
+// media queries
+@include sm-laptop {
+    #footer {
+        // background-color: red;
+        height: 100%;
+    }
+    .margin-top {
+        margin-top: 3rem;
+    }
+    #footer_pages {
+        p {
+            padding: 0.5rem 0rem;
+        }
+    }
+    #last_pages {
+        #our_partner {
+            padding: 0.8rem 0rem;
+        }
+    }
+}
+
+@include tablet {
+    .useful_links {
+        margin-top: 1.5rem;
+        // background-color: red;
+    }
+}
+
+@include mobile {
+    #footer {
+        margin-left: 1rem;
+        // background-color: red;
+    }
+    // copywrite section
+    #copywrite_sec {
+        p {
+            font-size: 15px;
+        }
+    }
+}
+
+@include sm-mobile {
+    #footer {
+        // background-color: red;
+        margin-left: 1rem;
+        #logo_info {
+            // background-color: red;
+            img {
+                width: 225px;
+                height: 60px;
+            }
+            p {
+                padding-top: 1rem;
+                width: 317px;
+                // background-color: blue;
+            }
+        }
+    }
+    .useful_links {
+        margin-top: 3rem;
+    }
+    #copywrite_sec {
+        flex-direction: column;
+        p {
+            font-size: 16px;
+        }
+        #social_icon {
+            // background-color: red;
+            margin-top: 1rem;
+            #instagram {
+                margin-left: 0rem;
+            }
+        }
+    }
+}

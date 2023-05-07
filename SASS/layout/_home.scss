@@ -1,0 +1,268 @@
+            .hero {
+                position: relative;
+                padding: 5.55rem 0rem;
+                // here is percentage
+                #percent {
+                    margin-top: 3rem;
+                    width: 425px;
+                    height: 40px;
+                    padding: 6px 16px;
+                    background: linear-gradient(125.17deg, #272727 0%, #11101D 100%);
+                    border-radius: 10px;
+                    img {
+                        Width: 25px;
+                        // padding-right: 1rem;
+                    }
+                    ul span,
+                    p {
+                        font-family: 'Poppins', sans-serif;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 150%;
+                        color: $para-color;
+                    }
+                    ul span {
+                        color: $white-color;
+                        padding: 0px 6px;
+                    }
+                    #twernty {
+                        padding-left: 0rem;
+                    }
+                }
+                // here is hero info
+                #hero_info {
+                    width: 150%;
+                    h1 {
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 72px;
+                        line-height: 140%;
+                        letter-spacing: 0.01em;
+                    }
+                    #generation {
+                        background: radial-gradient(64.18% 64.18% at 71.16% 35.69%, #DEF9FA 0.89%, #BEF3F5 17.23%, #9DEDF0 42.04%, #7DE7EB 55.12%, #5CE1E6 71.54%, #33BBCF 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                        text-fill-color: transparent;
+                    }
+                    p {
+                        width: 483px;
+                        height: 100%;
+                    }
+                }
+                // here is layer img
+                #layer_img {
+                    width: 100%;
+                    margin-left: 11%;
+                }
+                // here is get started circle
+                #get_started {
+                    // background-color: red;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 26%;
+                    left: 40%;
+                    width: 140px;
+                    height: 140px;
+                    border: 2px solid #92EAEE;
+                    border-radius: 106px;
+                    flex-direction: column;
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    padding: 1rem;
+                    transition: all 0.1s ease-in;
+                    img {
+                        width: 25px;
+                        height: 25px;
+                        margin-left: 1rem;
+                    }
+                    p {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        padding-left: 0.95rem;
+                        line-height: 130%;
+                        background: radial-gradient(64.18% 64.18% at 71.16% 35.69%, #DEF9FA 0.89%, #BEF3F5 17.23%, #9DEDF0 42.04%, #7DE7EB 55.12%, #5CE1E6 71.54%, #33BBCF 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                        text-fill-color: transparent;
+                    }
+                }
+            }
+            
+            // here is compony info 
+            #Comp_info {
+                width: 90%;
+                margin: auto;
+                // background-color: red;
+                margin-bottom: 2rem;
+                h1 {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 40.8925px;
+                    line-height: 130%;
+                    /* or 53px */
+                    color: #FFFFFF;
+                }
+                p {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20.4463px;
+                    line-height: 130%;
+                    padding-left: 1rem;
+                    text-transform: uppercase;
+                    background: radial-gradient(64.18% 64.18% at 71.16% 35.69%, #DEF9FA 0.89%, #BEF3F5 17.23%, #9DEDF0 42.04%, #7DE7EB 55.12%, #5CE1E6 71.54%, #33BBCF 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    text-fill-color: transparent;
+                }
+            }
+            
+            // here is media query
+            @include sm-laptop {
+                .hero {
+                    // background-color: red;
+                    padding-top: 5rem;
+                    #percent {
+                        margin-top: 0rem;
+                    }
+                    h1 {
+                        width: 100%;
+                    }
+                    #get_started {
+                        padding: 0rem;
+                        top: 8%;
+                        left: 75%;
+                    }
+                    #layer_img {
+                        // margin-left: 0rem;
+                        margin-top: 4rem;
+                    }
+                }
+                #Comp_info {
+                    width: 90%;
+                    margin: auto;
+                }
+            }
+            
+            @include sm-laptop {
+                .hero {
+                    #hero_info {
+                        width: 100%;
+                    }
+                }
+            }
+            
+            @include sm-tablet {
+                .hero {
+                    #hero_info {
+                        width: 100%;
+                        h1 {
+                            font-size: 60px;
+                        }
+                    }
+                    #get_started {
+                        top: 98%;
+                        left: 32%;
+                    }
+                    #layer_img {
+                        margin-left: 6%;
+                    }
+                }
+                #Comp_info {
+                    // background-color: red;
+                    height: 180px;
+                    margin-top: 13rem;
+                    flex-direction: column;
+                    justify-content: center;
+                    justify-content: space-between;
+                    text-align: center;
+                }
+            }
+            
+            @include mobile {
+                .hero {
+                    #hero_info {
+                        padding-top: 1rem;
+                        h1 {
+                            font-size: 48px;
+                        }
+                        p {
+                            width: 440px;
+                            font-size: 16.05px;
+                        }
+                    }
+                    #layer_img {
+                        margin-left: 4%;
+                    }
+                }
+            }
+            
+            @include sm-mobile {
+                .hero {
+                    // background-color: red;
+                    padding-top: 0rem;
+                    margin-top: 2rem;
+                    #percent {
+                        display: flex;
+                        align-items: center;
+                        justify-content: left;
+                        margin-top: 0rem;
+                        width: 310px;
+                        height: 67px;
+                        padding: 0px 10px;
+                        img {
+                            Width: 32px;
+                        }
+                        ul {
+                            // background-color: red;
+                            padding-left: 1.5rem;
+                            p,
+                            span {
+                                font-size: 16.5px;
+                            }
+                        }
+                    }
+                    #hero_info {
+                        h1 {
+                            font-size: 37px;
+                            // background-color: blue;
+                        }
+                        p {
+                            // background-color: red;
+                            width: 328px;
+                            height: 100%;
+                            font-size: 16px;
+                            line-height: 32px;
+                            margin-top: 1.25rem;
+                            scroll-behavior: smooth;
+                            color: rgba(255, 255, 255, 0.7);
+                        }
+                    }
+                    #get_started {
+                        top: 103%;
+                        left: 26%;
+                    }
+                    #layer_img {
+                        margin-left: 7%;
+                    }
+                }
+                #Comp_info {
+                    width: 93%;
+                    margin: auto;
+                    height: 138px;
+                    margin-top: 13rem;
+                    h1 {
+                        font-size: 27px;
+                    }
+                    p {
+                        font-size: 17px;
+                    }
+                }
+            }

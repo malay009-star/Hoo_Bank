@@ -6,25 +6,246 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoo_Bank</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="icon" href="img/paypaal.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="CSS/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <header class="flex justify-between  items-center">
-        <div id="logo" class="grow"><img src="img/logo.svg" alt=""></div>
-        <ul class="flex items-center is-open" id="menu">
-            <li><a class="underline-offset-4" href="#">Home</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Client</a></li>
-        </ul>
-        <button id="btn" type="button">Get Started</button>
-        <label for="click"><i id="nav-burger" class="fa-solid fa-bars "></i></label>
-    </header>
+    <section id="equal_width">
 
-    <script src="js/app.js"></script>
+        <!-- navigation bar -->
+        <header class="flex justify-between  items-center">
+            <div id="logo" class="grow"><img src="img/logo.svg" alt=""></div>
+            <ul class="flex items-center is-open" id="menu">
+                <li><a class="underline-offset-4" href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Client</a></li>
+            </ul>
+            <button id="btn" class="ml-8" type="button">Get Started</button>
+            <label for="click"><i id="nav-burger" class="fa-solid fa-bars "></i></label>
+        </header>
+
+        <!-- Hero section -->
+        <div class="hero equal_spacing   grid lg:grid-cols-2 md:grid-cols-1">
+            <div>
+                <div class="flex items-center justify-center justify-evenly text-center" id="percent">
+                    <img src="img/discount.png" alt="">
+                    <ul class="flex flex-wrap"> <span id="twernty">20%</span>
+                        <p>DISCOUNT FOR</p>
+                        <Span> 1MONTH</Span>
+                        <P>ACCOUNT</P>
+                    </ul>
+                </div>
+
+                <!-- here is hero info -->
+                <div id="hero_info">
+                    <h1>The Next</h1>
+                    <h1 id="generation">Generation</h1>
+                    <h1>Payment Method</h1>
+                    <p class="para">Our team of experts uses a methodology to identify the credit cards most likely to fit your needs. We examine annual percentage rates, annual fees.</p>
+                </div>
+            </div>
+
+            <!-- images is here -->
+            <div id="layer_img"><img src="img/robot-layers.png" alt=""></div>
+
+            <!-- her is Get started -->
+            <div class="flex item-center justify-center text-center" id="get_started">
+                <div class="flex">
+                    <p>Get</p>
+                    <img src="img/up-right.png" alt="">
+                </div>
+                <p>Started</p>
+            </div>
+        </div>
+
+        <!--Companies information -->
+        <section class="flex flex-wrap justify-between  items-center text-center" id="Comp_info">
+            <div class="flex items-center text-center justify-between">
+                <h1>3800+</h1>
+                <p>USERS ACTIVE</p>
+            </div>
+            <div class="flex items-center text-center justify-between">
+                <h1>230+</h1>
+                <p>TRUSTED BY COMPANIES</p>
+            </div>
+            <div class="flex items-center text-center justify-between">
+                <h1>3800+</h1>
+                <p>TRANSACTION</p>
+            </div>
+        </section>
+
+
+        <!--componies Features -->
+        <section class="grid lg:grid-cols-2 md:grid-cols-1 equal_spacing" id="componies_feature">
+            <!-- You do the Bussiness -->
+            <div class="same_heading" id="busines_method">
+                <h1>You do the business, we’ll handle the money.</h1>
+                <p class="para">With the right credit card, you can improve your financial life by building credit, earning rewards and saving money. But with hundreds of credit cards on the market.</p>
+                <button id="btn">Get Started</button>
+            </div>
+            <!-- Tabs -->
+            <div class="tab-container">
+                <div class="flex flex wrap items-center" id="all_tabs">
+                    <button id="btn_one" data-tab="tab1">Rewards</button>
+                    <button id="btn_two" data-tab="tab2">Secured</button>
+                    <button id="btn_three" data-tab="tab3">Balance</button>
+                </div>
+                <!-- and Tabs content -->
+                <div class="tab-content mt-8" id="content_one">
+                    <img class="" src="img/Star.svg" alt="">
+                    <div class="mt-5">
+                        <h1>Rewards</h1>
+                        <p class="para mt-0">The best credit cards offer some tantalizing combinations of promotions and prizes. With the right credit card, you can improve your financial life by building credit, earning rewards and saving money. But with hundreds of credit
+                            cards on the market.
+                        </p>
+                    </div>
+                </div>
+                <div class="tab-content mt-8" id="content_two">
+                    <img class="" src="img/Shield.svg" alt="">
+                    <div class="mt-5">
+                        <h1>100% Secured</h1>
+                        <p class="para mt-0">We take proactive steps make sure your information and transactions are secure. With the right credit card, you can improve your financial life by building credit, earning rewards and saving money. But with hundreds of credit cards
+                            on the market.</p>
+                    </div>
+                </div>
+                <div class="tab-content mt-8" id="content_three"><img class="" src="img/Send.svg" alt="">
+                    <div class="mt-5">
+                        <h1>Balance Transfer</h1>
+                        <p class="para mt-0">A balance transfer credit card can save you a lot of money in interest charges. With the right credit card, you can improve your financial life by building credit, earning rewards and saving money. But with hundreds of credit cards
+                            on the market.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Paypal -->
+        <section class="grid lg:grid-cols-2 md:grid-cols-1 same_heading">
+            <img src="img/paypal.png" alt="">
+            <div id="paypal_info">
+                <h1 id="easy_control">Easily control your billing & invoicing.</h1>
+                <p class="para">Elit enim sed massa etiam. Mauris eu adipiscing ultrices ametodio aenean neque. Fusce ipsum orci rhoncus aliporttitor integer platea placerat.</p>
+                <div class="flex items-center" id="apple_playstore">
+                    <img src="img/apple.svg" alt="">
+                    <img id="play_store" src="img/playstore.svg" alt="">
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Scan credit cards -->
+        <section class="grid lg:grid-cols-2 md:grid-cols-1">
+            <div class="same_heading equal_spacing" id="busines_method">
+                <h1>Find a better card deal in few easy steps.</h1>
+                <p class="para" id="card_para">Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.</p>
+                <button id="btn">Get Started</button>
+            </div>
+            <img id="card" src="img/cards.png" alt="">
+        </section>
+
+        <!-- Clients heading and para-->
+        <section class="grid lg:grid-cols-2 md:grid-cols-1 same_heading" id="clients_info">
+            <h1>What people are saying about us</h1>
+            <p class="para"> Everything you need to accept card payments and grow your business anywhere on the planet.</p>
+        </section>
+        <!-- Leadser cards-->
+        <section class="grid lg:grid-cols-3 md:grid-cols-2" id="leader_profile">
+            <div id="leader_info">
+                <img src="img/quotes.svg" alt="">
+                <p class="para">Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.</p>
+                <div class="flex item-center">
+                    <img id="women_img" src="img/herman.png" alt="">
+                    <div id="women_info">
+                        <h2>Herman Jensen</h2>
+                        <p>Founder & Leader</p>
+                    </div>
+                </div>
+            </div>
+            <div id="leader_info">
+                <img src="img/quotes.svg" alt="">
+                <p class="para">Money makes your life easier. If you're lucky to have it, you're lucky.</p>
+                <div class="flex item-center">
+                    <img id="women_img" class="rounded-full" src="img/malay.jpeg" alt="">
+                    <div id="women_info">
+                        <h2>Malay Khan</h2>
+                        <p>IT Project Manager</p>
+                    </div>
+                </div>
+            </div>
+            <div id="leader_info">
+                <img src="img/quotes.svg" alt="">
+                <p class="para">It is usually people in the money business, finance, and international trade that are really rich.</p>
+                <div class="flex item-center">
+                    <img id="women_img" src="img/kenn.png" alt="">
+                    <div id="women_info">
+                        <h2>Kenn Gallagher</h2>
+                        <p>Founder & Leader</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service section start -->
+        <section class="equal_spacing">
+            <section class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2" id="service_type">
+                <img src="img/airbnb.png" alt="">
+                <img src="img/binance.png" alt="">
+                <img src="img/coinbase.png" alt="">
+                <img src="img/dropbox.png" alt="">
+            </section>
+            <section class="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 same_heading" id="services_box">
+                <div id="services_info">
+                    <h1>Let’s try our service now!</h1>
+                    <p class="para">Everything you need to accept card payments and grow your business anywhere on the planet.</p>
+                </div>
+                <button id="btn">Get started</button>
+            </section>
+        </section>
+
+        <!-- Footer section -->
+        <section class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 pb-8" id="footer">
+            <div id="logo_info">
+                <img src="img/logo.svg" alt="">
+                <p>A new way to make the payments easy, reliable and secure.</p>
+            </div>
+            <div class="flex item-center justify-between flex-col lg:ml-20" id="footer_pages">
+                <h1 class="useful_links">Useful Links</h1>
+                <p>Content</p>
+                <p>How it Works</p>
+                <p>create</p>
+                <p>Explore</p>
+                <p>Terms & Services</p>
+            </div>
+            <div class="flex item-center justify-between flex-col lg:ml-20 margin-top" id="footer_pages">
+                <h1>Community</h1>
+                <p>Helper Center</p>
+                <p>Partner</p>
+                <p>Suggestions</p>
+                <p>Blog</p>
+                <p>Newsletters</p>
+            </div>
+            <div class="flex item-center flex-col lg:ml-20 margin-top" id="last_pages">
+                <h1>Partner</h1>
+                <p class="lg:py-4" id="our_partner">Our Partner</p>
+                <p>Become a Partner</p>
+            </div>
+        </section>
+
+        <!-- Copywrite section -->
+        <section class="flex item-center justify-between" id="copywrite_sec">
+            <p>2023 HooBank. All Rights Reserved ©.</p>
+            <div class="flex item-center" id="social_icon">
+                <img id="instagram" src="img/instagram.svg" alt=" ">
+                <img src="img/facebook.svg " alt=" ">
+                <img src="img/twitter.svg " alt=" ">
+                <img src="img/linkedin.svg " alt=" ">
+            </div>
+        </section>
+        <script src="js/app.js "></script>
+    </section>
 </body>
 
 </html>

@@ -1,0 +1,44 @@
+#btn {
+    display: inline-block;
+    border-radius: 10px;
+    color: $bg-color;
+    font-weight: 500;
+    font-size: 16px;
+    width: 150px;
+    height: 60px;
+    // transition: all 0.2s linear;
+    background: linear-gradient(157.81deg, #def9fa -43.27%, #bef3f5 -21.24%, #9dedf0 12.19%, #7de7eb 29.82%, #5ce1e6 51.94%, #33bbcf 90.29%);
+}
+
+#btn:hover {
+    transition: transform 0.3s;
+    transform: scale(1.1);
+}
+
+@include mobile {
+    #btn {
+        width: 140px;
+        height: 55px;
+    }
+    #btn:hover {
+        width: 150px;
+        height: 60px;
+    }
+}
+
+.same_heading {
+    h1 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 160%;
+        letter-spacing: 0.01em;
+    }
+}
+
+@include sm-mobile {
+    #btn {
+        font-weight: 500;
+        padding: 11px 11px;
+    }
+}
