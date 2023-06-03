@@ -10,6 +10,7 @@ header {
         width: 71px;
         height: 21px;
         text-align: center;
+        transition: all 0.2s linear;
     }
     a {
         font-family: Poppins, sans-serif;
@@ -17,10 +18,8 @@ header {
         font-weight: 400;
         font-size: 16px;
         line-height: 130%;
-        // transition: all 0.3s ease-out;
     }
     li:hover {
-        transition: transform 0.3s;
         transform: scale(1.1);
         color: $primary-color;
     }

@@ -64,7 +64,7 @@
 // copywrite section
 #copywrite_sec {
     padding-top: 1.5rem;
-    padding-bottom: 4rem;
+    padding-bottom: 3rem;
     border-top: 1px solid #3F3E45;
     p {
         font-style: normal;
@@ -76,6 +76,7 @@
 
 #social_icon {
     img {
+        cursor: pointer;
         margin-left: 1rem;
     }
 }

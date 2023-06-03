@@ -22,11 +22,11 @@ body {
   font-size: 16px;
   width: 150px;
   height: 60px;
+  transition: all 0.21s linear;
   background: linear-gradient(157.81deg, #def9fa -43.27%, #bef3f5 -21.24%, #9dedf0 12.19%, #7de7eb 29.82%, #5ce1e6 51.94%, #33bbcf 90.29%);
 }
 
 #btn:hover {
-  transition: transform 0.3s;
   transform: scale(1.1);
 }
 
@@ -92,6 +92,7 @@ header li {
   width: 71px;
   height: 21px;
   text-align: center;
+  transition: all 0.2s linear;
 }
 header a {
   font-family: Poppins, sans-serif;
@@ -101,7 +102,6 @@ header a {
   line-height: 130%;
 }
 header li:hover {
-  transition: transform 0.3s;
   transform: scale(1.1);
   color: #5CE1E6;
 }
@@ -844,7 +844,7 @@ header #nav-burger {
 
 #copywrite_sec {
   padding-top: 1.5rem;
-  padding-bottom: 4rem;
+  padding-bottom: 3rem;
   border-top: 1px solid #3F3E45;
 }
 #copywrite_sec p {
@@ -855,6 +855,7 @@ header #nav-burger {
 }
 
 #social_icon img {
+  cursor: pointer;
   margin-left: 1rem;
 }
 
